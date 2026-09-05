@@ -12,11 +12,51 @@
 <nav>
 <main>
 <section>
+  <h2>借阅说明</h2>
+  <h3>一、借阅与期限</h3>
+  <ul>
+    <li>每人每次最多借阅 2 册，借期 30 天。</li>
+    <li>请在借期结束前归还；若需继续使用，可在到期前办理一次续借，续借期限 15 天。</li>
+  </ul>
+  <h3>二、关于逾期（超时）</h3>
+  <ul>
+    <li>逾期未还的，自到期次日起按每册每天 0.2 元计算逾期费。</li>
+    <li>逾期超过 30 天仍未归还的，暂停该读者的借阅资格。</li>
+  </ul>
+  <h3>三、关于图书损坏与遗失</h3>
+  <ul>
+    <li>请在阅读过程中爱护图书，不得涂写、批注、撕页或污损。</li>
+    <li>轻度损坏按书价的 20%–50% 赔偿；严重损坏按书价全额赔偿。</li>
+    <li>图书遗失按原书价赔偿，无法购回同版本时按原书价的 2 倍赔偿。</li>
+  </ul>
+  <h3>四、其他注意事项</h3>
+  <ul>
+    <li>请勿将图书带出登记区域私自携带，离馆时请主动配合核验。</li>
+    <li>对损坏、偷盗或拒不归还图书的行为，将按相关规定处理。</li>
+  </ul>
+</section>
+<section>
 <h2>借阅人信息登记</h2>
 <p>校外用户无需填写学号</p>
+<form>
+<label for="name">姓名</label>
+<input type="text" id="name" required><br>
+<label for="xuehao">学号</label>
+<input type="number" id="xuehao"><br>
+<label for="phone">电话号码<label>
+<input type="number" id="phone" required>
+</form>
 </section>
 <section>
 <h2>借阅图书信息登记</h2>
+<form>
+<label for="bookname">书名</label>
+<input type="text" id="bookname"required><br>
+<label for="booknumber">图书编号</label>
+<input type="text" id="booknumber" placeholder="编号见图书侧边条形码下方" required><br>
+<label for="time">借阅时长</label>
+<input type="number" id="time" required><label>天   （单次最多可借阅三十天）<label>
+</form>
 </section>
 </main>
 <footer>
